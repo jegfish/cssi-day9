@@ -14,6 +14,7 @@
     <!-- include only the Firebase features as you need -->
     <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script defer src="js/viewMessages.js"></script>
   </head>
 
   <body>
@@ -29,7 +30,7 @@
                         <input class="input is-medium is-rounded" type="text" placeholder="What's the passcode?" id="passcode" required />
                     </div>
                 </div>
-                <button class="button is-block is-fullwidth is-primary is-medium is-rounded" onclick="getMessages()">
+                <button class="button is-block is-fullwidth is-primary is-medium is-rounded" type="submit" id="viewMsg">
                     Click Here
                 </button>
             </form>
@@ -41,8 +42,6 @@
         </section>
 
     </section>
-    
-    <script src="js/viewMessages.js"></script>
   </body>
 
 </html>
